@@ -1,6 +1,6 @@
 *** Settings ***
 Library    RPA.Email.ImapSmtp
-
+#code for sending mail
 *** Test Cases ***
 TC1
     Authorize    account=balaji0017@gmail.com    password=dinakaran    smtp_server=smtp.gmail.com
