@@ -1,0 +1,8 @@
+DEB [20220929-14:54:48.996] thr=2   paramiko.transport: [chan 1] Max packet in: 32768 bytes
+DEB [20220929-14:54:49.002] thr=1   paramiko.transport: [chan 1] Max packet out: 32768 bytes
+DEB [20220929-14:54:49.002] thr=1   paramiko.transport: Secsh channel 1 opened.
+DEB [20220929-14:54:49.024] thr=1   paramiko.transport: [chan 1] Sesch channel 1 request ok
+DEB [20220929-14:54:49.073] thr=1   paramiko.transport: [chan 1] EOF received (1)
+DEB [20220929-14:54:49.076] thr=1   paramiko.transport: [chan 1] EOF sent (1)
+DEB [20220929-14:54:49.090] thr=2   paramiko.transport: [chan 0] EOF sent (0)
+DEB [20220929-14:54:49.091] thr=1   paramiko.transport: EOF in transport thread

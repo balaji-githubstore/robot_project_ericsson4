@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20220929 16:22:00.392" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo4 Email" source="d:\Mine\Company\Ericsson 4\robot_project\rpa\demo4_email.robot">
+<test id="s1-t1" name="TC1" line="5">
+<kw name="Authorize" library="RPA.Email.ImapSmtp">
+<arg>account=balaji0017@gmail.com</arg>
+<arg>password=dinakaran</arg>
+<arg>smtp_server=smtp.gmail.com</arg>
+<arg>imap_server=imap.gmail.com</arg>
+<arg>smtp_port=587</arg>
+<arg>imap_port=993</arg>
+<doc>Authorize user to SMTP and IMAP servers.</doc>
+<msg timestamp="20220929 16:22:01.118" level="INFO">Protecting keyword: RPA.Email.ImapSmtp.Authorize</msg>
+<msg timestamp="20220929 16:22:02.996" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="FAIL" starttime="20220929 16:22:01.117" endtime="20220929 16:22:02.994"/>
+</kw>
+<kw name="Send Message" library="RPA.Email.ImapSmtp">
+<arg>sender=balaji0017@gmail.com</arg>
+<arg>recipients=balaji007@gmail.com</arg>
+<arg>subject=CHECK</arg>
+<arg>body=hello</arg>
+<doc>Send SMTP email</doc>
+<status status="NOT RUN" starttime="20220929 16:22:03.002" endtime="20220929 16:22:03.003"/>
+</kw>
+<status status="FAIL" starttime="20220929 16:22:01.112" endtime="20220929 16:22:03.006">SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials e62-20020a621e41000000b0053e599d7032sm5822938pfe.54 - gsmtp')</status>
+</test>
+<status status="FAIL" starttime="20220929 16:22:00.401" endtime="20220929 16:22:03.016"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo4 Email">Demo4 Email</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
